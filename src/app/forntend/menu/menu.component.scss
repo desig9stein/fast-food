@@ -1,0 +1,61 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  overflow: hidden;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  margin: 100px 0 0;
+  height: 100%;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 1200px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.tabs {
+  min-width: 0;
+  min-height: 0;
+}
+.tab-item {
+  min-width: 100%;
+}
+.card {
+  width: 320px;
+  height: max-content;
+  min-width: 32%;
+  flex-shrink: 0;
+}
+.row-layout {
+  display: flex;
+}
+.tab-item-content {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 16px;
+  overflow: hidden;
+  padding: 24px 0 0;
+  height: 100%;
+  min-width: 100%;
+  min-height: 50px;
+}
+.actions-content {
+  min-width: 50px;
+  min-height: 40px;
+}
+.image {
+  height: 100%;
+}

@@ -1,0 +1,7 @@
+<h5 class="h5">
+  Statistics
+</h5>
+<div class="row-layout group">
+  <igx-category-chart [dataSource]="financialBoxOfficeRevenue" computedPlotAreaMarginMode="series" class="category-chart"></igx-category-chart>
+  <igx-pie-chart [dataSource]="financialBoxOfficeRevenue" startAngle="270" labelMemberPath="Franchise" valueMemberPath="TotalWorldBoxOfficeRevenue" class="pie-chart"></igx-pie-chart>
+</div>

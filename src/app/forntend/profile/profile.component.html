@@ -1,0 +1,72 @@
+<div class="row-layout group">
+  <div class="column-layout group_1">
+    <igx-nav-drawer [isOpen]="true" [pin]="true" [pinThreshold]="1024" width="320px" class="nav-drawer">
+      <ng-template igxDrawer>
+        <div igxDrawerItem igxRipple>
+          <igx-icon class="icon">
+            leaderboard
+          </igx-icon>
+          <span>Dashboard</span>
+        </div>
+        <div igxDrawerItem igxRipple>
+          <igx-icon class="icon_1">
+            account_circle
+          </igx-icon>
+          <span>Profile Info</span>
+        </div>
+        <div igxDrawerItem igxRipple>
+          <igx-icon class="icon">
+            local_grocery_store
+          </igx-icon>
+          <span>Orders history</span>
+        </div>
+        <div igxDrawerItem igxRipple>
+          <igx-icon class="icon">
+            payment
+          </igx-icon>
+          <span>Paymant info</span>
+        </div>
+        <div igxDrawerItem igxRipple>
+          <igx-icon class="icon">
+            favorite
+          </igx-icon>
+          <span>Favorite products</span>
+        </div>
+      </ng-template>
+    </igx-nav-drawer>
+  </div>
+  <div class="column-layout group_2">
+    <h3 class="h3">
+      Profile info
+    </h3>
+    <div class="column-layout group_3">
+      <div class="column-layout group_4">
+        <img src="/assets/DALL·E Mitch Sprockets portrait.png" class="image" />
+        <button igxButton="raised" igxRipple class="button">
+          UPLOAD
+        </button>
+      </div>
+    </div>
+    <igx-input-group type="border" class="input">
+      <input type="text" [(ngModel)]="value" [required]="true" igxInput />
+      <label igxLabel>Name</label>
+    </igx-input-group>
+    <igx-input-group type="border" class="input">
+      <input type="text" [(ngModel)]="value1" igxInput />
+      <label igxLabel>Species</label>
+    </igx-input-group>
+    <igx-input-group type="border" class="input">
+      <input type="text" [(ngModel)]="value2" igxInput />
+      <label igxLabel>Galaxy</label>
+    </igx-input-group>
+    <igx-input-group type="border" class="input">
+      <input type="text" [(ngModel)]="value3" [required]="true" igxInput />
+      <label igxLabel>Planet</label>
+      <igx-hint>Auto detect the cosmic address:  Planet Earth, Solar System, Oort Cloud, Local Interstellar Cloud, Local Cavity, Orion Arm, Milky Way, Local Group, Virgo Supercluster, Laniakea Supercluster, the Universe.</igx-hint>
+    </igx-input-group>
+    <igx-input-group type="border" class="input">
+      <input type="text" [(ngModel)]="value4" [required]="true" igxInput />
+      <label igxLabel>Teleport number</label>
+    </igx-input-group>
+  </div>
+</div>

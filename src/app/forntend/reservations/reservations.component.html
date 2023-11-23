@@ -1,0 +1,79 @@
+<div class="column-layout group">
+  <div class="column-layout page-header">
+    <h5 class="h5">
+      Reservation form
+    </h5>
+    <button igxButton="outlined" igxRipple class="button">
+      <igx-icon>
+        call
+      </igx-icon>
+      <span>Call us</span>
+    </button>
+  </div>
+  <div class="column-layout group_1">
+    <div class="row-layout group_2">
+      <div class="column-layout group_3">
+        <igx-input-group type="box" class="user-input">
+          <igx-prefix>
+            <igx-icon class="icon">
+              person
+            </igx-icon>
+          </igx-prefix>
+          <input type="email" placeholder="enter your email" [required]="true" igxInput />
+          <label igxLabel>Email address</label>
+        </igx-input-group>
+        <igx-input-group type="box" class="user-input">
+          <igx-prefix>
+            <igx-icon class="icon">
+              phone
+            </igx-icon>
+          </igx-prefix>
+          <input type="tel" placeholder="Enter your teleport number" [required]="true" igxInput />
+          <label igxLabel>Teleport</label>
+        </igx-input-group>
+      </div>
+      <div class="column-layout group_4">
+        <igx-select type="box" placeholder="Select location" class="user-input">
+          <igx-select-item value="Option">
+            Earth
+          </igx-select-item>
+          <igx-select-item value="Option">
+            Mars
+          </igx-select-item>
+          <igx-select-item value="Option">
+            Neptun
+          </igx-select-item>
+          <label igxLabel>Location</label>
+        </igx-select>
+        <igx-select type="box" placeholder="Select guests" class="user-input">
+          <igx-select-item value="Option">
+            1 - 10
+          </igx-select-item>
+          <igx-select-item>
+            10 - 20
+          </igx-select-item>
+          <igx-select-item value="Option">
+            20 - 50
+          </igx-select-item>
+          <igx-select-item value="Option">
+            50 - 80
+          </igx-select-item>
+          <igx-select-item value="Option">
+            80 - 100
+          </igx-select-item>
+          <igx-select-item value="Option" [disabled]="true">
+            100+ Call us
+          </igx-select-item>
+          <label igxLabel>Number of guests</label>
+        </igx-select>
+      </div>
+    </div>
+    <igx-input-group type="border" class="ig-typography__body-1 textarea">
+      <label igxLabel>Additional requirements</label>
+      <textarea placeholder="Enter messege" igxInput></textarea>
+    </igx-input-group>
+    <button igxButton="raised" igxRipple class="button_1">
+      SEND RESERVATION
+    </button>
+  </div>
+</div>

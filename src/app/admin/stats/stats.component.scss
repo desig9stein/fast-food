@@ -1,0 +1,46 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+}
+.h5 {
+  height: max-content;
+  min-width: min-content;
+}
+.row-layout {
+  display: flex;
+}
+.group {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  overflow: hidden;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  max-height: 400px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.category-chart {
+  --brushes: #56b4e9 #009e73 #f0e442 #d55e00 #d600fe #00499f #e69f00 #000000 #84f0df #735656;
+  --outlines: #56b4e9 #009e73 #f0e442 #d55e00 #d600fe #00499f #e69f00 #000000 #84f0df #735656;
+  --marker-brushes: #56b4e9 #009e73 #f0e442 #d55e00 #d600fe #00499f #e69f00 #000000 #84f0df #735656;
+  --marker-outlines: #56b4e9 #009e73 #f0e442 #d55e00 #d600fe #00499f #e69f00 #000000 #84f0df #735656;
+  min-width: 400px;
+  min-height: 300px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.pie-chart {
+  --brushes: #56b4e9 #009e73 #f0e442 #d55e00 #d600fe #00499f #e69f00 #000000 #84f0df #735656;
+  --outlines: #56b4e9 #009e73 #f0e442 #d55e00 #d600fe #00499f #e69f00 #000000 #84f0df #735656;
+  min-width: 250px;
+  min-height: 250px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}

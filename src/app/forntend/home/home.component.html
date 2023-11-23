@@ -1,0 +1,261 @@
+<div class="row-layout group"></div>
+<div class="column-layout group_1">
+  <h2 class="content">
+    Best sellers
+  </h2>
+  <div class="row-layout group_2">
+    <igx-card type="outlined" class="card">
+      <igx-card-media height="300px">
+        <img src="/assets/DALL·E Pizza Planet.png" class="image" />
+      </igx-card-media>
+      <igx-card-header>
+        <h3 igxCardHeaderTitle>
+          Earth's crust
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+          Pizza
+        </h5>
+      </igx-card-header>
+      <igx-card-content class="body-content">
+        <div class="row-layout group_3">
+          <igx-badge type="error" value="NEW" class="badge"></igx-badge>
+          <h5 class="h5">
+            $19.99
+          </h5>
+        </div>
+      </igx-card-content>
+      <igx-card-actions class="actions-content">
+        <ng-container igxStart>
+          <button igxButton="flat" [disabled]="true" igxRipple class="button">
+            Out of stock
+          </button>
+        </ng-container>
+        <ng-container igxEnd>
+          <button igxButton="icon" igxRipple class="button_1">
+            <igx-icon>
+              favorite_border
+            </igx-icon>
+          </button>
+          <button igxButton="icon" igxRipple class="button_1">
+            <igx-icon>
+              local_grocery_store
+            </igx-icon>
+          </button>
+          <button igxButton="icon" igxRipple class="button_1">
+            <igx-icon>
+              share
+            </igx-icon>
+          </button>
+        </ng-container>
+      </igx-card-actions>
+    </igx-card>
+    <igx-card type="outlined" class="card">
+      <igx-card-media height="300px">
+        <img src="/assets/DALL·E Burger Art.png" class="image" />
+      </igx-card-media>
+      <igx-card-header>
+        <h3 igxCardHeaderTitle>
+          Saturn
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+          Burgers
+        </h5>
+      </igx-card-header>
+      <igx-card-content class="body-content">
+        <div class="row-layout group_3">
+          <h5 class="h5">
+            $17.99
+          </h5>
+        </div>
+      </igx-card-content>
+      <igx-card-actions class="actions-content">
+        <ng-container igxStart>
+          <button igxButton="flat" igxRipple [igxToggleAction]="dialog" class="button_2">
+            ORDER
+          </button>
+        </ng-container>
+        <ng-container igxEnd>
+          <button igxButton="icon" igxRipple class="button_1">
+            <igx-icon>
+              favorite
+            </igx-icon>
+          </button>
+          <button igxButton="icon" igxRipple class="button_1">
+            <igx-icon>
+              bookmark
+            </igx-icon>
+          </button>
+          <button igxButton="icon" igxRipple class="button_1">
+            <igx-icon>
+              share
+            </igx-icon>
+          </button>
+        </ng-container>
+      </igx-card-actions>
+    </igx-card>
+    <igx-card type="outlined" class="card">
+      <igx-card-media height="300px">
+        <img src="/assets/DALL·E Cosmic Doughnut.png" class="image" />
+      </igx-card-media>
+      <igx-card-header>
+        <h3 igxCardHeaderTitle>
+          Back hole donut
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+          Deserts
+        </h5>
+      </igx-card-header>
+      <igx-card-content class="body-content">
+        <div class="row-layout group_3">
+          <h5 class="h5">
+            $7.99
+          </h5>
+        </div>
+      </igx-card-content>
+      <igx-card-actions class="actions-content">
+        <ng-container igxStart>
+          <button igxButton="flat" [disabled]="true" igxRipple class="button">
+            Out of stock
+          </button>
+        </ng-container>
+        <ng-container igxEnd>
+          <button igxButton="icon" igxRipple class="button_1">
+            <igx-icon>
+              favorite_border
+            </igx-icon>
+          </button>
+          <button igxButton="icon" igxRipple class="button_1">
+            <igx-icon>
+              local_grocery_store
+            </igx-icon>
+          </button>
+          <button igxButton="icon" igxRipple class="button_1">
+            <igx-icon>
+              share
+            </igx-icon>
+          </button>
+        </ng-container>
+      </igx-card-actions>
+    </igx-card>
+  </div>
+  <h2 class="content">
+    Meat our team
+  </h2>
+  <div class="row-layout group_4">
+    <div class="column-layout group_5">
+      <div class="column-layout group_6">
+        <h3 class="content">
+          Mikey
+        </h3>
+        <h5 class="content">
+          The Chef
+        </h5>
+      </div>
+    </div>
+    <div class="column-layout group_7">
+      <div class="column-layout group_6">
+        <h3 class="content">
+          Roger
+        </h3>
+        <h5 class="content">
+          The Owner
+        </h5>
+      </div>
+    </div>
+    <div class="column-layout group_8">
+      <div class="column-layout group_6">
+        <h3 class="content">
+          Lukas
+        </h3>
+        <h5 class="content">
+          The Delivery dude
+        </h5>
+      </div>
+    </div>
+  </div>
+  <igx-dialog [closeOnEscape]="true" #dialog>
+    <ng-container>
+      <igx-banner #banner class="banner">
+        <p>
+          Due to the high demand delivery may take longer
+        </p>
+        <igx-banner-actions>
+          <button igxButton="flat" igxRipple [igxToggleAction]="banner" class="button">
+            I understand
+          </button>
+        </igx-banner-actions>
+        <igx-icon class="icon">
+          rocket_launch
+        </igx-icon>
+      </igx-banner>
+      <div class="row-layout group_9">
+        <igx-icon [igxToggleAction]="dialog" class="icon_1">
+          clear
+        </igx-icon>
+      </div>
+      <div class="row-layout group_10">
+        <div class="column-layout group_11">
+          <div class="column-layout group_12"></div>
+          <div class="column-layout group_13">
+            <p class="ig-typography__overline text">
+              Description
+            </p>
+            <p class="text_1">
+              Embark on a culinary journey that's out of this world! This intergalactic Saturn burger blends the essence of Earth's finest ingredients with the exotic flair of Martian herbs and Venusian spices. A burger like no other, your taste buds will feel as if they've rocketed across the cosmos.
+            </p>
+          </div>
+        </div>
+        <div class="column-layout group_14">
+          <div class="column-layout group_15">
+            <h5 class="content_2">
+              Item name
+            </h5>
+            <p class="content_2">
+              Ingredient 1, Ingredient 2, Ingredient 3
+            </p>
+          </div>
+          <div class="column-layout group_16">
+            <p class="text_2">
+              Addons
+            </p>
+            <igx-checkbox labelPosition="after" class="checkbox">
+              cheese
+            </igx-checkbox>
+            <igx-checkbox labelPosition="after" class="checkbox">
+              peperoni
+            </igx-checkbox>
+            <igx-checkbox labelPosition="after" class="checkbox">
+              mozarella
+            </igx-checkbox>
+            <igx-checkbox labelPosition="after" class="checkbox">
+              Jalapenios
+            </igx-checkbox>
+            <igx-checkbox labelPosition="after" class="checkbox">
+              Label
+            </igx-checkbox>
+          </div>
+          <igx-input-group type="border" class="input">
+            <input type="number" igxInput />
+            <label igxLabel>Quantity</label>
+          </igx-input-group>
+          <div class="column-layout group_15">
+            <p class="ig-typography__overline content_2">
+              TOTAL
+            </p>
+            <h5 class="h5">
+              $18.00
+            </h5>
+          </div>
+          <button igxButton="raised" igxRipple [igxToggleAction]="banner" class="button">
+            ADD TO ORDER
+          </button>
+        </div>
+      </div>
+    </ng-container>
+    <igx-dialog-actions>
+      <button igxButton="flat" igxRipple [igxToggleAction]="dialog" class="button">
+        CANCEL
+      </button>
+    </igx-dialog-actions>
+  </igx-dialog>
+</div>

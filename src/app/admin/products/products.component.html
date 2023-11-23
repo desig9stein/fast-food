@@ -1,0 +1,30 @@
+<h5 class="products">
+  Products
+</h5>
+<div class="column-layout group">
+  <igx-tree-grid [data]="northwindProducts" primaryKey="productID" foreignKey="categoryID" [moving]="true" [rowEditable]="true" displayDensity="cosy" [allowFiltering]="true" filterMode="excelStyleFilter" class="tree-grid">
+    <igx-grid-toolbar>
+      <igx-grid-toolbar-actions>
+        <igx-grid-toolbar-pinning></igx-grid-toolbar-pinning>
+        <igx-grid-toolbar-hiding></igx-grid-toolbar-hiding>
+        <igx-grid-toolbar-exporter></igx-grid-toolbar-exporter>
+      </igx-grid-toolbar-actions>
+      <igx-grid-toolbar-title>Grid Toolbar</igx-grid-toolbar-title>
+    </igx-grid-toolbar>
+    <igx-column field="productID" dataType="number" header="productID" [sortable]="true" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-paginator [perPage]="15"></igx-paginator>
+    <igx-column field="supplierID" dataType="number" header="supplierID" [hidden]="true" [sortable]="true" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column field="categoryID" dataType="number" header="categoryID" [sortable]="true" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column field="quantityPerUnit" dataType="string" header="quantityPerUnit" [sortable]="true" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column field="unitPrice" dataType="number" header="unitPrice" [sortable]="true" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column field="unitsInStock" dataType="number" header="unitsInStock" [hidden]="true" [sortable]="true" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column field="unitsOnOrder" dataType="number" header="unitsOnOrder" [hidden]="true" [sortable]="true" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column field="reorderLevel" dataType="number" header="reorderLevel" [hidden]="true" [sortable]="true" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column field="discontinued" dataType="boolean" header="discontinued" [sortable]="true" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column field="name" dataType="string" header="name" [sortable]="true" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-action-strip>
+      <igx-grid-pinning-actions></igx-grid-pinning-actions>
+      <igx-grid-editing-actions [addRow]="true"></igx-grid-editing-actions>
+    </igx-action-strip>
+  </igx-tree-grid>
+</div>

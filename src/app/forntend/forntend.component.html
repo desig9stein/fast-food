@@ -1,0 +1,129 @@
+<div class="column-layout group">
+  <div class="row-layout header">
+    <div class="column-layout header-wrapper">
+      <div class="row-layout group_1">
+        <div class="row-layout logo-wrapper">
+          <div class="row-layout header-nav">
+            <button igxButton="flat" igxRipple routerLink="/forntend/home" class="button">
+              HOME
+            </button>
+            <button igxButton="flat" igxRipple routerLink="/forntend/menu" class="button">
+              OUR MENU
+            </button>
+            <button igxButton="flat" igxRipple routerLink="/forntend/reservations" class="button">
+              RESERVATIONS
+            </button>
+          </div>
+        </div>
+        <div class="row-layout user-aria">
+          <div class="row-layout group_2">
+            <div routerLink="/forntend/profile" class="column-layout user-name">
+              <p class="ig-typography__overline content">
+                Logged in as
+              </p>
+              <p class="content">
+                Rick Sanches
+              </p>
+            </div>
+            <igx-avatar src="/assets/DALL·E Mitch Sprockets portrait.png" shape="circle" routerLink="/forntend/profile"></igx-avatar>
+            <button igxButton="icon" igxRipple [igxToggleAction]="dropdown" class="button_1">
+              <igx-icon>
+                more_vert
+              </igx-icon>
+            </button>
+            <div class="row-layout shopping-card">
+              <button igxButton="icon" [disabled]="true" igxRipple class="button_1">
+                <igx-icon>
+                  shopping_cart
+                </igx-icon>
+              </button>
+              <igx-badge value="0" class="badge"></igx-badge>
+            </div>
+            <button igxButton="icon" igxRipple [igxToggleAction]="favorites" class="button_1">
+              <igx-icon>
+                favorite
+              </igx-icon>
+            </button>
+            <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #favorites>
+              <igx-dialog-title>
+                <h5>
+                  Favorite items
+                </h5>
+              </igx-dialog-title>
+              <ng-container>
+                <div class="column-layout group_3">
+                  <div class="column-layout group_4">
+                    <p class="content">
+                      Burgers
+                    </p>
+                    <div class="row-layout group_3">
+                      <img src="/assets/DALL·E Burger Art.png" class="image" />
+                      <div class="row-layout group_5">
+                        <h5 class="content">
+                          Saturn
+                        </h5>
+                        <button igxButton="raised" igxRipple class="button_2">
+                          <igx-icon>
+                            add_shopping_cart
+                          </igx-icon>
+                          <span>Order again</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column-layout group_6">
+                    <p class="content">
+                      Donuts
+                    </p>
+                    <div class="row-layout group_3">
+                      <img src="/assets/DALL·E Cosmic Doughnut.png" class="image" />
+                      <div class="row-layout group_5">
+                        <h5 class="content">
+                          Black hole
+                        </h5>
+                        <button igxButton="raised" [disabled]="true" igxRipple class="button_2">
+                          <igx-icon>
+                            add_shopping_cart
+                          </igx-icon>
+                          <span>Out of stock</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-container>
+              <igx-dialog-actions>
+                <button igxButton="flat" igxRipple routerLink="/forntend/home" class="button_3">
+                  Close
+                </button>
+              </igx-dialog-actions>
+            </igx-dialog>
+            <igx-drop-down #dropdown class="dropdown">
+              <igx-drop-down-item routerLink="/forntend/profile">
+                Profile
+              </igx-drop-down-item>
+              <igx-drop-down-item>
+                Dashboard
+              </igx-drop-down-item>
+            </igx-drop-down>
+          </div>
+        </div>
+        <div routerLink="/forntend/home" class="column-layout group_7">
+          <img src="/assets/Group 1.svg" class="image_1" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column-layout col">
+    <div class="column-layout main-content">
+      <div class="view-container">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+    <div class="column-layout footer">
+      <p class="text">
+        Created by Marin Popov
+      </p>
+    </div>
+  </div>
+</div>
